@@ -1,3 +1,4 @@
+/*
 //console.log("hello");
 //window.alert("this is an alert");
 let fullName = "vengeance";
@@ -44,3 +45,16 @@ let x=2 //outside the bracket x cannot be accessed. its lile local scope.
     // variable declared using the var can be redeclared
 }
 //x=2; redeclaring;
+
+*/
+///////////////////////////////////////////////////////////////////////////////
+//what is hoisting??
+//----->Hoisting in JavaScript means that JavaScript
+ //moves variable and function declarations to the top of the scope before it executes the code.
+
+sayHello(); // This works because of hoisting
+
+function sayHello() {
+    console.log("Hello!");
+}
+//////////////////////////////////////////////////////////////////////////////////
