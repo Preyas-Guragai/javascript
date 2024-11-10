@@ -31,3 +31,16 @@ console.log(result);
 let username;
 username =window.prompt("what's your name?");
 console.log(username);
+
+
+{
+
+let x=2 //outside the bracket x cannot be accessed. its lile local scope.
+//variable declared using let cannot be redeclared.
+}
+
+{
+    var x=2 //Variables declared with varinside a { } block can be accessed from outside the block
+    // variable declared using the var can be redeclared
+}
+//x=2; redeclaring;
