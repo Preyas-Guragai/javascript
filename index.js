@@ -57,7 +57,7 @@ sayHello(); // This works because of hoisting
 function sayHello() {
     console.log("Hello!");
 }
-    */
+   
 //////////////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////////////
@@ -93,7 +93,6 @@ discarding bits that fall off the end and filling in the leftmost bits based on 
 
 This is known as sign-propagating right shift, which means it keeps the sign of the number
  (positive or negative) intact. After shifting, the >>= operator assigns the result back to x.
-*/
 //for example;
 
 let y = 8;      // binary: 00001000
@@ -106,6 +105,39 @@ console.log(y); // output: 2
 let yy = -8;     // binary: 11111000 (in 8-bit signed binary)
 yy >>= 2;        // shift right by 2, binary: 11111110
 console.log(yy); // output: -2
-
-
+*/
 /////////////////////////////////////////////////////////////////////////
+
+//Left shift assignment operator
+//for example;
+
+let left_assignment = -100;
+left_assignment<<= 5;
+console.log(left_assignment);
+
+/*Here's what happens step-by-step:
+
+Starting Value of x (-100):
+
+In binary (using a 32-bit two's complement representation), -100 is represented as:
+Copy code
+11111111 11111111 11111111 10011100
+Left Shifting by 5 (x <<= 5):
+
+Shifting left by 5 means moving each bit 5 positions to the left, and filling the 5 rightmost
+ bits with 0s. The left shift effectively multiplies the number by 
+2^5 or 32.
+The new bit pattern becomes:
+Copy code
+11111111 11111111 11111001 11000000
+Resulting Value:
+
+The resulting binary value, 11111111 11111111 11111001 11000000, is -3200 in decimal.
+Explanation
+When left-shifting a negative number in two's complement, the shift operates the same as for positive numbers. 
+The left shift by 𝑛 bits multiplies the value by 2^𝑛. So, -100 << 5 is equivalent to 
+-100*2^5
+=-100*32
+the value of x becomes -3200
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
