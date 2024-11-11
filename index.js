@@ -36,7 +36,7 @@ console.log(username);
 
 {
 
-let x=2 //outside the bracket x cannot be accessed. its lile local scope.
+let x=2 //outside the bracket x cannot be accessed. its like local scope.
 //variable declared using let cannot be redeclared.
 }
 
@@ -48,7 +48,7 @@ let x=2 //outside the bracket x cannot be accessed. its lile local scope.
 
 */
 ///////////////////////////////////////////////////////////////////////////////
-//what is hoisting??
+/*what is hoisting??
 //----->Hoisting in JavaScript means that JavaScript
  //moves variable and function declarations to the top of the scope before it executes the code.
 
@@ -57,4 +57,55 @@ sayHello(); // This works because of hoisting
 function sayHello() {
     console.log("Hello!");
 }
+    */
 //////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////
+
+//operators
+let text="hello";
+text += " world";
+console.log(text);
+
+let x=105;
+x-=5;
+console.log(x);
+x*=5;
+console.log(x);
+x**=2;
+console.log(x);
+var xx="preyas";
+xx+=" guragai";
+console.log(xx);
+
+/* In JavaScript, the right shift assignment operator (>>=) shifts the bits of a variable to the right by 
+a specified number of places and then assigns the result back to the variable. Here's how it works:
+x >>= y
+---> x is the variable whose bits you want to shift.
+--->y is the number of positions you want to shift x to the right.
+
+How It Works:
+The >> (right shift) operator moves each bit in x to the right by y places, 
+discarding bits that fall off the end and filling in the leftmost bits based on the sign of x:
+
+--->If x is positive, the new bits are filled with 0.
+--->If x is negative, the new bits are filled with 1 (to preserve the sign).
+
+This is known as sign-propagating right shift, which means it keeps the sign of the number
+ (positive or negative) intact. After shifting, the >>= operator assigns the result back to x.
+*/
+//for example;
+
+let y = 8;      // binary: 00001000
+y >>= 2;        // shift right by 2, binary: 00000010
+console.log(y); // output: 2
+
+//In this example, the binary representation of 8 is shifted right by 2 places, resulting in 2.
+
+//Example with a Negative Number:
+let yy = -8;     // binary: 11111000 (in 8-bit signed binary)
+yy >>= 2;        // shift right by 2, binary: 11111110
+console.log(yy); // output: -2
+
+
+/////////////////////////////////////////////////////////////////////////
