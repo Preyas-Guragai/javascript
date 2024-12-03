@@ -8,7 +8,7 @@ document.getElementById("mySubmit").onclick= function()
 
 
 };
-*/
+
 //type conversion 
 let age=window.prompt("how old are you");
 age+=1;
@@ -38,3 +38,14 @@ z=Boolean(c);
 console.log(x, typeof x);
 console.log(x, typeof y);
 console.log(x, typeof z);
+
+*/
+//const=that can be changed;
+let radius;
+//let pi=3.1415;
+const PI=3.1415; //capitalizing the constant is for primitive data case;
+let circumference;
+radius= window.prompt("enter the radius");
+radius=Number(radius);
+circumference=2*PI*radius;
+console.log(circumference);
