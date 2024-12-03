@@ -14,7 +14,7 @@ let student = false;
 document.getElementById("p1").textContent = `Your name is ${fullName}`; //overides by the below sentence.
 document.getElementById("p1").textContent= fullName; 
 document.getElementById("p2").textContent = `Your age is ${age} years old`;
-document.getElementById("p3").textContent = `Student status: ${student}`;
+document.getElementById("p3").textContent = `Student status: ${student}`; 
              
             //////////////////////////////
 //operator precidence
