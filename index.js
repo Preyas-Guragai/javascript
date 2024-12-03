@@ -110,7 +110,7 @@ console.log(yy); // output: -2
 
 //Left shift assignment operator
 //for example;
-
+/*
 let left_assignment = -100;
 left_assignment<<= 5;
 console.log(left_assignment);
@@ -140,4 +140,4 @@ The left shift by 𝑛 bits multiplies the value by 2^𝑛. So, -100 << 5 is equ
 =-100*32
 the value of x becomes -3200
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

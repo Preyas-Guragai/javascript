@@ -45,7 +45,14 @@ let radius;
 //let pi=3.1415;
 const PI=3.1415; //capitalizing the constant is for primitive data case;
 let circumference;
-radius= window.prompt("enter the radius");
-radius=Number(radius);
-circumference=2*PI*radius;
+
+
 console.log(circumference);
+
+document.getElementById("mySubmit").onclick=function()
+{
+   radius= document.getElementById("mytext").value;
+   circumference=2*PI*radius;
+   document.getElementById("myh3").textContent=circumference +"cm";
+
+}
