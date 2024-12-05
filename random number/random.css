@@ -4,12 +4,12 @@ body{
      
 }
 #myButton{
-    font-size: 3em;
+    font-size: 2em;
     padding: 5px 25px ;
     border-radius: 25px;
 
 }
-#myLabel{
+.myLabels{
     font-size: 5em ;
     color: rgb(174, 202, 49);
 }
