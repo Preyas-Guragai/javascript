@@ -39,8 +39,8 @@ console.log(x, typeof x);
 console.log(x, typeof y);
 console.log(x, typeof z);
 
-*/
-//const=that can be changed;
+
+///////////////////////////////const=that can be changed;
 let radius;
 //let pi=3.1415;
 const PI=3.1415; //capitalizing the constant is for primitive data case;
@@ -56,3 +56,33 @@ document.getElementById("mySubmit").onclick=function()
    document.getElementById("myh3").textContent=circumference +"cm";
 
 }
+   */
+
+  /////////////////////maths objects?///////////////////////
+//console.log(Math.PI);//3.1415
+//console.log(Math.E); //2.7182
+//let x=4.8;
+//let y=8.1;
+//let a=10;
+//let xx=-3.14
+//let z=Math.round(x);//rounds the x i.e 3.1415 to 3 and 3.8 to 4. //normal rounding
+//let z=Math.floor(x);//rounds down.i.e 4.8 to 4
+//let z=Math.ceil(y); //rounds up i.e if x is 8.1 to 9
+//let z=Math.trunc(y); //x is 4.8 trunc to 4 and x 8.1 is trunced to 8;
+//let z=Math.pow(a,3);
+//let z=Math.sqrt(a);
+//let z=Math.log(a);
+//let z=Math.sin(45);
+//let z=Math.abs(xx); //absolute value
+//console.log(z);      
+ 
+//display maximum value
+//let x=3;
+//let y=2;
+//let z=1;
+//let max=Math.max(x,y,z);
+//console.log(max);
+///////////////////////display minimum value
+//let min=Math.min(x,y,z);
+//console.log(min);
+

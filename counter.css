@@ -13,9 +13,11 @@
     color:white;
     background-color:rgb(51, 85, 154);
     border-radius: 5px;
-    cursor: pointer;
+    /*cursor: pointer;*/
+    cursor: grab;
     transition: background-color 0.25s;
 }
 .buttons:hover{
     background-color:rgb(50, 171, 157);
+    width: 150px;
 }
