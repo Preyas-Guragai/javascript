@@ -87,7 +87,7 @@ document.getElementById("mySubmit").onclick=function()
 //console.log(min);
 
 /////////////////////////////////////////// RANDOM NUMBER GENERATION ////////////////////////////////  
-
+/*
 let randomNum= Math.floor(Math.random()*5)+1;
 //random number genrate from 0 to 1 --->let randomNum=Math.random();
 //random number from to 5-->let randomNum=Math.random()*5;
@@ -101,3 +101,6 @@ const max=100;
 let randomNumber=Math.floor(Math.random()*(max-min)+min);
 //max-min is done so that the range is set correctly;
 console.log(randomNumber);
+*/
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////                //////////////////////////////////////////
