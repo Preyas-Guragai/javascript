@@ -86,3 +86,18 @@ document.getElementById("mySubmit").onclick=function()
 //let min=Math.min(x,y,z);
 //console.log(min);
 
+/////////////////////////////////////////// RANDOM NUMBER GENERATION ////////////////////////////////  
+
+let randomNum= Math.floor(Math.random()*5)+1;
+//random number genrate from 0 to 1 --->let randomNum=Math.random();
+//random number from to 5-->let randomNum=Math.random()*5;
+//generate random number between 0 and 5, but dont want decimals--->let randomNum= Math.floor(Math.random()*5);
+//generate random number with minimum 1-->let randomNum= Math.floor(Math.random()*5)+1;
+console.log(randomNum);
+
+/////random number from 50 to 100//////
+const min=50;
+const max=100;
+let randomNumber=Math.floor(Math.random()*(max-min)+min);
+//max-min is done so that the range is set correctly;
+console.log(randomNumber);
