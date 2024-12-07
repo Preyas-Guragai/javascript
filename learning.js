@@ -1,4 +1,4 @@
-/*
+/* part 1
 let username;
 document.getElementById("mySubmit").onclick= function()
 {
@@ -40,7 +40,10 @@ console.log(x, typeof y);
 console.log(x, typeof z);
 
 
-///////////////////////////////const=that can be changed;
+///////////////////////////////const=that can be changed; 
+
+PART 2;
+
 let radius;
 //let pi=3.1415;
 const PI=3.1415; //capitalizing the constant is for primitive data case;
@@ -104,9 +107,70 @@ console.log(randomNumber);
 */
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////         IF STATEMENTS ARE EASY       //////////////////////////////////////////
-let age=25;
-if(age>20)
+/*let age=25;
+let haslicense=true;
+if(age>18)
 {
-   consolele.console.log(you are eligible);
+   console.log("you are eligible");
+   if(haslicense)
+   {
+      console.log("you has a license");
+
+   }
+   else 
+   {
+      console.log("you do not have a license yet"); 
+   }
    
+}
+let time;
+time=window.prompt("enter time");
+if(time<12)
+{
+   console.log("morning");
+}
+let student;
+student =true;
+if(student)
+{
+   console.log("you are a student");
+
+}
+else
+console.log("you are not a student");
+
+*/
+
+// part 3//////////
+
+const myText=document.getElementById("myText");
+const mySubmit=document.getElementById("mySubmit");
+const resultElement=document.getElementById("resultElement");
+let age;
+mySubmit.onclick=function()
+{
+   age=myText.value;
+   //input from input box is a string type. so typecast to number is necessary;
+   age=Number(age);
+   
+         
+            if (age>=100)
+   {
+
+      resultElement.textContent=`you are too old`
+   }
+   if (age==0)
+      {
+         resultElement.textContent=`you are just a day old`
+      }
+      if (age>=18)
+         {
+            
+            resultElement.textContent=`you are good to go`
+         }
+      if (age<18){
+
+      
+               resultElement.textContent=`you are  not capable`
+            }
 }
