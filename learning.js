@@ -139,7 +139,7 @@ if(student)
 else
 console.log("you are not a student");
 
-*/
+
 
 // part 3//////////
 
@@ -174,3 +174,48 @@ mySubmit.onclick=function()
                resultElement.textContent=`you are  not capable`
             }
 }
+
+
+*/
+
+/////////////////////////PART-4/////////////////////
+
+// .checked=property that determines the checkes status of the html checkbox or radio button element
+
+
+const myCheckBox=document.getElementById("myCheckBox");
+const visaBtn=document.getElementById("visabtn");
+const esewa =document.getElementById("esewa");
+const  khalti=document.getElementById("khalti");
+const  mySubmit=document.getElementById("mySubmit");
+const  subResult =document.getElementById("subResult");
+const paymentResult =document.getElementById("paymentResult");
+
+mySubmit.onclick=function()
+{
+   if(myCheckBox.checked)
+   {
+      subResult.textContent=`you are subscribed`;
+   }
+   else{
+      subResult.textContent=`you are not subscribed`;
+   }
+
+   if(visaBtn.checked)
+      {
+        paymentResult.textContent=`you are paying with visa`;
+      }
+      else if(esewa.checked) 
+         {
+            paymentResult.textContent=`you are paying with esewa`;
+         }    
+      else if(khalti.checked) 
+         {
+            paymentResult.textContent=`you are paying with khalti`;
+         }    
+         else{
+            paymentResult.textContent=`you must select payment method`;
+         }
+      
+      }    
+    

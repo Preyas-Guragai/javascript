@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="learning.css">
     <script src="learning.js" defer></script>
 </head>
 <body>
@@ -26,11 +27,38 @@
 <h3 id="myh3"></h3>
 -->
 
- <!--     part 3-->
+ <!--     part 3
 <label>Enter your age:</label><br><br>
 <input type="text" id="myText"><br><br>
 <button type="submit" id="mySubmit">submit</button>
 <p id="resultElement"></p>
+-->
 
-</body>
+
+                           <!--part 4--
+
+Adding the same name attribute to multiple radio button inputs groups them together.
+ When radio buttons share the same name, only one button in the group can be 
+ selected at a time. Selecting one button will automatically deselect any other button in the same group.
+
+In your example, all three radio buttons (Visa, Esewa, and Khalti) have name="card". 
+This means they are part of the same group, so only one of them can be selected at any given time.
+-->
+<input type="checkbox" id="myCheckBox">
+<label for="myCheckBox">Subscribe</label><br><br>
+
+<input type="radio" id="visabtn" name="card">
+<label for="visabtn">Visa</label> <br>
+
+<input type="radio" id="esewa" name="card">
+<label for=" esewa">Esewa</label> <br>
+
+<input type="radio" id="khalti" name="card">
+<label for="khalti">Khalti </label> <br>
+
+<button type="submit" id="mySubmit">Submit</button><br><br>
+ 
+
+ <p id="subResult"></p>
+ <p id="paymentResult"></p>
 </html>
