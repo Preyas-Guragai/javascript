@@ -1,4 +1,7 @@
-/* part 1
+/*////////////////////////////////////// part 1////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+
 let username;
 document.getElementById("mySubmit").onclick= function()
 {
@@ -42,7 +45,11 @@ console.log(x, typeof z);
 
 ///////////////////////////////const=that can be changed; 
 
-PART 2;
+
+
+//////////////////////////////////////PART 2;///////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+
 
 let radius;
 //let pi=3.1415;
@@ -89,7 +96,12 @@ document.getElementById("mySubmit").onclick=function()
 //let min=Math.min(x,y,z);
 //console.log(min);
 
-/////////////////////////////////////////// RANDOM NUMBER GENERATION ////////////////////////////////  
+
+
+//////////////////////////////////// RANDOM NUMBER GENERATION ////////////////////////////////  
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /*
 let randomNum= Math.floor(Math.random()*5)+1;
 //random number genrate from 0 to 1 --->let randomNum=Math.random();
@@ -141,7 +153,11 @@ console.log("you are not a student");
 
 
 
-// part 3//////////
+
+///////////////////////////////// part 3/////////////////////////////
+////////////////////////////////////////////////////////////////////
+
+
 
 const myText=document.getElementById("myText");
 const mySubmit=document.getElementById("mySubmit");
@@ -178,10 +194,15 @@ mySubmit.onclick=function()
 
 */
 
+
+
 /////////////////////////PART-4/////////////////////
+///////////////////////////////////////////////////
+
+
 
 // .checked=property that determines the checkes status of the html checkbox or radio button element
-
+/*
 
 const myCheckBox=document.getElementById("myCheckBox");
 const visaBtn=document.getElementById("visabtn");
@@ -219,3 +240,33 @@ mySubmit.onclick=function()
       
       }    
     
+*/
+
+//ternary operator=shortcut for if and else statement helps to assign variable based on a condition
+// condition ?codeIfTrue:codeIfFalse
+
+let age=21;
+let check=age >=18 ? "you are an adult" : "you are a minor";
+console.log(check);
+               //alternative is below
+/*let message;
+if(age>=18)
+{
+   message="ok";
+
+}
+else
+message="go back";
+*/ 
+let time=12;
+let wish=time>=12?"good afternoon":"good morning";
+console.log(wish);
+
+let isStudent=true;
+let message=isStudent?"student":"not student";
+console.log(message);
+
+
+let purchase=120;
+let discount=purchase>=100?10:0;
+console.log(`your total after discount is ${purchase-purchase*(discount/100)}`);
