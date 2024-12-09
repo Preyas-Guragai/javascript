@@ -244,7 +244,7 @@ mySubmit.onclick=function()
 
 //ternary operator=shortcut for if and else statement helps to assign variable based on a condition
 // condition ?codeIfTrue:codeIfFalse
-
+/*
 let age=21;
 let check=age >=18 ? "you are an adult" : "you are a minor";
 console.log(check);
@@ -257,7 +257,7 @@ if(age>=18)
 }
 else
 message="go back";
-*/ 
+ 
 let time=12;
 let wish=time>=12?"good afternoon":"good morning";
 console.log(wish);
@@ -270,3 +270,108 @@ console.log(message);
 let purchase=120;
 let discount=purchase>=100?10:0;
 console.log(`your total after discount is ${purchase-purchase*(discount/100)}`);
+
+*/
+
+
+////////////////////////////SWITCH CASE////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+/* 
+let day=7;
+if(day==1)
+{
+   console.log(`sunday`);
+}
+else if(day==2)
+{
+   console.log(`momday`);
+}
+else if(day==3)
+   {
+      console.log(`tuesday`);
+   }
+ else if(day==4)
+      {
+         console.log(`wednesday`);
+      }
+      else if(day==5)
+         {
+            console.log(`thursday`);
+         }
+         else if(day==6)
+            {
+               console.log(`friday`);
+            }
+            else if(day==7)
+               {
+                  console.log(`saturday`);
+               }
+else{
+   console.log(`${day} is not a day`);
+}
+   instead of writing if,else,else if......, we may use switch case;
+   */
+  
+   let day=window.prompt("enter the day");
+   day=Number(day); //necessary to convert into number since the data asked using windows.prompt are of string type;
+   switch(day){
+      case 1:
+         console.log(`monday`);
+         break; //is it necessary to use otherwise all the case are excuted.
+
+         case 2:
+         console.log(`tuesday`);
+         break;
+
+         case 3:
+         console.log(`wednesday`);
+         break;
+
+         case 4:
+         console.log(`thursday`);
+         break;
+
+         case 5:
+         console.log(`firday`);
+         break;
+
+         case 6:
+         console.log(`saturday`);
+         break;
+
+         case 7:
+         console.log(`sunday`); //console.log("sunday");
+         break;
+         
+         default:
+            console.log(`${day} is not a day`);
+            //console.log("${day} is not a day");----> this is incorrect. because we have to use
+            // backtick(template literals) while inserting variable.
+
+   }
+
+
+   let testScore=92;
+   let letterGrade;
+
+   switch(true)
+   {
+      case testScore>=90:
+      letterGrade="A";
+      break;
+
+      case testScore>=80:
+      letterGrade="B";
+      break;
+
+      case testScore>=70:
+      letterGrade="B-";
+      break;
+
+      case testScore>=60:
+      letterGrade="C";
+      break;
+   }
+   console.log(letterGrade);
+    
