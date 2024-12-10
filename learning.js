@@ -311,7 +311,7 @@ else{
    console.log(`${day} is not a day`);
 }
    instead of writing if,else,else if......, we may use switch case;
-   */
+ 
   
    let day=window.prompt("enter the day");
    day=Number(day); //necessary to convert into number since the data asked using windows.prompt are of string type;
@@ -375,3 +375,40 @@ else{
    }
    console.log(letterGrade);
     
+*/
+
+
+
+//////////////////////////STRING METHODS/////////////////////////////
+////////////////////////////////////////////////////////////
+ 
+//string method allows you to manipulate and work with text (strings)
+
+let username="preyas";
+console.log(username.charAt("2"));// to find alphabet in specific place output:e
+
+let find="potato";
+console.log(find.indexOf("o")); //to find at what array index the given alphabet is present; output:1
+
+//if you notice there is still another "o" but first "o" place is displayed. to find another "o" place use
+//.lastIndexof();
+console.log(find.lastIndexOf("o")); //output:5
+
+let fiind="potatoo";
+console.log(fiind.lastIndexOf("o")); //output:6
+
+let fiiind="pootatoo";
+console.log(fiiind.lastIndexOf("o")); //output:7
+
+let fiiiind="pootaot";
+console.log(fiiiind.lastIndexOf("o")); //output:5
+
+//lastIndexof() always gives the last position of the alphabet specified in case of repeated alphabets; 
+
+
+////////////////////FIND LENGTH OF A STRING///////////////////////////
+/////////////////////////////////////////////////////////////////////
+console.log(username.length);
+console.log(find.length);
+console.log(fiind.length);
+console.log(fiiiind.length);
