@@ -375,7 +375,7 @@ else{
    }
    console.log(letterGrade);
     
-*/
+
 
 
 
@@ -412,3 +412,103 @@ console.log(username.length);
 console.log(find.length);
 console.log(fiind.length);
 console.log(fiiiind.length);
+*/
+
+
+////////////////////TRIM STRING METHOD///////////////////////////
+////////////////////////////////////////////////////////////////
+
+//.trim helps to remove whitespaces 
+
+let name="    preyas    ";
+console.log(name.trim());
+
+
+///////////////////.toUppercase() STRING METHOD//////////////////
+////////////////////////////////////////////////////////////////
+//changes lowercase into lower case
+let be="preyas ";
+be=be.toUpperCase();
+console.log(be);
+ 
+let b="preyas guragai";
+console.log(b.toUpperCase());
+
+
+
+///////////////////.toLowercase() STRING METHOD//////////////////
+////////////////////////////////////////////////////////////////
+//changes uppercase into lower case
+let a="PREYAS";
+console.log(a.toLowerCase());
+
+
+///////////////////.repeat() STRING METHOD//////////////////
+////////////////////////////////////////////////////////////////
+
+let rep="repeat me ";
+rep=rep.repeat(3);
+console.log(rep);
+
+
+///////////////// .startwith(); STRING METHOD//////////////////
+////////////////////////////////////////////////////////////////
+//checks if the string starts with the provided data
+//and returns the boolean
+
+let user="vengeance";
+resultt=user.startsWith("p");
+console.log(resultt);
+//output is false beaacuse our string does not start with "p"
+
+
+let userName=" vengeance";
+result=userName.startsWith(" ");
+if(result)
+{
+   console.log("your username can't began with whitespace")
+}
+else{
+   console.log(userName);
+}
+
+
+///////////////// .endswith(); STRING METHOD//////////////////
+////////////////////////////////////////////////////////////////
+//checks if the string ends with the provided data
+//and returns the boolean i.e true or false;
+
+let usser="vengeance ";
+reesult=usser.endsWith("p");
+console.log(reesult);
+//output is false beaacuse our string does not ends with "p"
+
+
+let userNName="vengeance     ";
+rresult=userNName.endsWith(" ");
+if(rresult)
+{
+   console.log("your username has whitespace at the end")
+}
+else{
+   console.log(userNName);
+}
+
+
+/////////////////////.includes()////////////////////////
+///////////////////////////////////////////////////////
+//checks if the specific alphabet provided is included or not
+
+let check="vengeance";
+resuult=check.includes("x");
+if(resuult)
+{
+   console.log("your username includes the provided alphabet ")
+}
+else{
+   console.log(`does not include provided alphabet and name is ${check}`);
+}
+
+let c="cat";
+r=c.includes("c");
+   console.log(r);
