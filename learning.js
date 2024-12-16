@@ -535,11 +535,39 @@ r=c.includes("c");
 ///////////////.padEnd(fieldwidth,"what to add in the increased FW")/////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
+/*
 let phon="123-456-7890";
 phon=phon.padEnd(15,"x");
 console.log(phon);
 //output=123-456-7890xxx
 //here total field width of phon variable is 12. so we provided 15 FW. remaining three fieldwidth is 
 //filled with x.
+*/
+
+
+/////////////////////////STRING SLICING////////////////
+///////////////string.slice(start,end);///////////////
+
+//creating a sub string from the original string
+//does not alter the original string;
+
+let name="vengeance"; //vengeance index=012345678 i.e o is v,,,, 1 is e.... 2 is n and so on.
+name=name.slice(0,5);
+console.log(name); //output=enge
+//here ending index is exclusive. 5 is the last index but printed upto index 4.
+
+
+//////////////negative index in slice////////////////
+
+let firstname="vengeance";
+//firstname=firstname.slice(-1);
+//console.log(firstname); //output=e
+
+//firstname=firstname.slice(-2);
+//console.log(firstname); //output= ce
+
+firstname=firstname.slice(-4);
+console.log(firstname); //output=nce
+//negative index starts the string from the end;
 
 
