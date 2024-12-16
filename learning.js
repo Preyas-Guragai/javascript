@@ -414,10 +414,9 @@ console.log(fiind.length);
 console.log(fiiiind.length);
 */
 
-
+/*
 ////////////////////TRIM STRING METHOD///////////////////////////
 ////////////////////////////////////////////////////////////////
-
 //.trim helps to remove whitespaces 
 
 let name="    preyas    ";
@@ -512,3 +511,35 @@ else{
 let c="cat";
 r=c.includes("c");
    console.log(r);
+
+
+   */
+
+   ///////////////////////////.replaceAll("what to replace","with what to replace")/////////////////////////////
+   ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    let phoneNumber="123-456-789";
+    phoneNumber=phoneNumber.replaceAll("-"," / ");
+    console.log(phoneNumber);
+
+    let phone="123-456-7890"
+    phone=phone.padStart(15,"0"); //output=000123-456-7890
+    //15 is the total field width but our input is 123-456-7890 i.e of 12 fieldwidth
+    //so 3 0 which is specified after field with is added in front and made total 15 fieldwidth
+    console.log(phone);
+
+    /* this is illegal. since the total fieldwidth is 12 of pho and we are providing 6 FW.
+    let pho="123-456-7890"
+    pho=pho.padStart("6","0");
+    console.log(pho);
+*/
+///////////////.padEnd(fieldwidth,"what to add in the increased FW")/////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+let phon="123-456-7890";
+phon=phon.padEnd(15,"x");
+console.log(phon);
+//output=123-456-7890xxx
+//here total field width of phon variable is 12. so we provided 15 FW. remaining three fieldwidth is 
+//filled with x.
+
+
