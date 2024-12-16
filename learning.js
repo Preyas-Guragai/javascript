@@ -514,7 +514,7 @@ r=c.includes("c");
 
 
    */
-
+/*
    ///////////////////////////.replaceAll("what to replace","with what to replace")/////////////////////////////
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
     let phoneNumber="123-456-789";
@@ -531,7 +531,9 @@ r=c.includes("c");
     let pho="123-456-7890"
     pho=pho.padStart("6","0");
     console.log(pho);
-*/
+    */
+
+
 ///////////////.padEnd(fieldwidth,"what to add in the increased FW")/////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -544,7 +546,7 @@ console.log(phon);
 //filled with x.
 */
 
-
+/*
 /////////////////////////STRING SLICING////////////////
 ///////////////string.slice(start,end);///////////////
 
@@ -569,5 +571,22 @@ let firstname="vengeance";
 firstname=firstname.slice(-4);
 console.log(firstname); //output=nce
 //negative index starts the string from the end;
+*/
 
+///////////////string slicing using .indexof()//////////////////
+///////////////////////////////////////////////////////////////
+
+let firstname="sir preyas";
+let fname=firstname.slice(0,firstname.indexOf(" "));
+console.log(fname); //output=sir;
+ let lastname=firstname.slice(firstname.indexOf(" ")+1, ); //+1 shifts fieldwidth to next index;
+ console.log(lastname); //output=preyas;
+
+ let email = "preyas1@gmail.com";
+let username = email.slice(0, email.indexOf("@"));
+let extension = email.slice(email.indexOf("@"));
+console.log(username);
+console.log(extension);
+//output=preyas1
+//@gmail.com
 
