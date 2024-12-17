@@ -418,6 +418,9 @@ console.log(fiiiind.length);
 ////////////////////TRIM STRING METHOD///////////////////////////
 ////////////////////////////////////////////////////////////////
 //.trim helps to remove whitespaces 
+//removes extraspace if whitespace is in the starting or at the end
+//whitespace in the middle of the string is not taken in  count let username="p r e y a s"; 
+//if you trim i.e console.log(username.trim()); output is p r e y a s
 
 let name="    preyas    ";
 console.log(name.trim());
@@ -573,6 +576,8 @@ console.log(firstname); //output=nce
 //negative index starts the string from the end;
 */
 
+
+/*
 ///////////////string slicing using .indexof()//////////////////
 ///////////////////////////////////////////////////////////////
 
@@ -589,4 +594,30 @@ console.log(username);
 console.log(extension);
 //output=preyas1
 //@gmail.com
+*/
 
+///////////////METHOD CHAINING/////////////////////////
+//////////////////////////////////////////////////////
+ 
+//CALLING ONE AFTER ANOTHER METHOD IN CONTINUOUS LINE OF CODE
+//TWO TYPES: NO METHOD CHAINING AND METHOD CHAINING
+
+let username = window.prompt("Enter your Name");
+//-----example of non method chaining--------
+
+username=username.trim();
+let letter = username.charAt(0);
+letter=letter.toUpperCase();
+
+let extrachars=username.slice(1);
+extrachars=extrachars.toLowerCase();
+username=letter+extrachars;
+console.log(username);
+
+//--------example of method chaining--------
+username=username.trim().charAt(0).toUpperCase()+username.slice(1).toLowerCase();
+console.log(username);
+//the above example of non method chaining can be replaced by this short code.
+
+//input=   pREyAds
+//output=Preyas
