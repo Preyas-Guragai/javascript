@@ -623,6 +623,7 @@ console.log(username);
 //output=Preyas
 */
 
+/*
 //////////////LOGICAL OPERATORS/////////////////
 ///////////////////////////////////////////////
 
@@ -677,3 +678,57 @@ if(temper<=0 || temper>30)
    }
    else
    console.log("The day is sunny");
+*/
+
+
+//-----------------------NOTE--------------------
+
+//     = assignment operator
+//     == comparison operator (compares if value are equal)
+//     === strict equality operator(compare if the values & data types are equal)
+//    != inequality operator
+//     !== strict inequality operator
+
+//---------------------------------------------------
+
+////////////////////  === strict equality operator///////////////////
+////////////////////////////////////////////////////////////////////
+//(compare if the values & data types are equal)
+
+const pi=3.1415; //number type
+
+if(pi=="3.1415") //pi here is string but data type is not checked. only value is checked.
+   {             //output=this is pi
+   console.log("this is pi");
+}
+else
+console.log("this is not pi");
+
+//-----------strict equality-------
+if(pi==="3.1415") //pi here is string and declared pi is number type
+                  // strict equality checks both data types and value
+                  // in this case OUTPUT= "THIS IS NOT PI";
+                  //if(pi===3.1415). if this is done the ouput is  "this is pi".
+   {
+   console.log("this is pi");
+}
+else
+console.log("this is not pi");
+
+//-----------!= inequality operator--------------
+
+if(pi!="3.1415") //pi here is string but data type is not checked. only value is checked.
+   {             //output="this is pi"
+   console.log("this is not pi");
+}
+else
+console.log("this is pi");
+
+//----------!== strict inequality operator-----------------
+
+if(pi!=="3.1415") //pi here is string but data type is of number type. both data types and value is checked
+   {              //output="this is not pi"
+   console.log("this is not pi");
+}
+else
+console.log("this is pi");
