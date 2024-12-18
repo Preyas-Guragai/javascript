@@ -690,7 +690,7 @@ if(temper<=0 || temper>30)
 //     !== strict inequality operator
 
 //---------------------------------------------------
-
+/*
 ////////////////////  === strict equality operator///////////////////
 ////////////////////////////////////////////////////////////////////
 //(compare if the values & data types are equal)
@@ -732,3 +732,10 @@ if(pi!=="3.1415") //pi here is string but data type is of number type. both data
 }
 else
 console.log("this is pi");
+*/
+
+// ------------CONTINUE LEARNING PART2 SERIES-------------------
+//LEARNING PART2.HTML
+//LEARNING PART2.CSS
+//LEARNING PART2.JS
+
