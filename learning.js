@@ -595,7 +595,7 @@ console.log(extension);
 //output=preyas1
 //@gmail.com
 */
-
+/*
 ///////////////METHOD CHAINING/////////////////////////
 //////////////////////////////////////////////////////
  
@@ -621,3 +621,59 @@ console.log(username);
 
 //input=   pREyAds
 //output=Preyas
+*/
+
+//////////////LOGICAL OPERATORS/////////////////
+///////////////////////////////////////////////
+
+const temp=-10;
+
+if(temp>0)
+{
+   console.log("the temperature is good");
+}
+else if (temp<=30)
+{
+   console.log("the temperature is good");
+}
+else
+console.log("the temperature is bad");
+
+//if you notice this code gives "the temperature is good" for temperature less than 0 due to else if (temp<=30).
+
+
+//------to eradicate such logical error we have logical operator.-------- 
+
+//--------logical and-----------------
+//both condition has to be true otherwise the whole condition is skipped
+const temperature=10;
+if(temperature>0 && temperature<=30)
+   {
+      console.log("the temperature is good");
+   }
+   else
+   console.log("the temperature is bad");
+
+   
+   //--------logical OR-----------------
+//any one of the condition is true the condition is executed; 
+const temper=-10;
+//if(temper>0 || temper<=30) this condition in OR makes every input correct so has to be modified.
+
+if(temper<=0 || temper>30)
+   {
+      console.log("the temperature is bad");
+   }
+   else
+   console.log("the temperature is good");
+
+
+   //--------logical NOT-----------------
+   
+   const isSunny=false;
+   if(!isSunny)
+   {
+      console.log("day is CLoudy");
+   }
+   else
+   console.log("The day is sunny");
