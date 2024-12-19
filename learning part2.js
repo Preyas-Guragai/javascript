@@ -1,5 +1,6 @@
 //-----------while loop-----------------
 //repeats some code WHILE some condition is true
+//while loop can be used to run the code for the infinite time
 /* 
 let username="";
  
@@ -31,7 +32,7 @@ do{
 while(username==="" || username === null)
     console.log(`Your name is ${username}`);
 
-*/
+
 
 //--while example-------------
 
@@ -55,4 +56,49 @@ if(username==="username" && password==="password")
  console.log("invalid");
 
 }
+*/
 
+//////////////////---------FOR LOOP------------------//////////////
+////////////////////////////////////////////////////////////////
+//for loop is used to run code for limited time
+
+for(let i=0;i<=5;i++)
+{
+    console.log(i);
+}
+for(let j=0; j<=10; j+=2)
+{
+    console.log(j);
+}
+console.log(" ");
+
+for( let z=10; z>0;--z)
+{
+    console.log(z);
+}
+console.log("happy birthday");
+
+////////////////----skip iteration------///////////////////
+//////////////////////////////////////////////////////////
+//"continue" just skips the specific iteration
+let x;
+for(x=1;x<=20;x++)
+{
+    if(x==13)
+        continue //when x=13, it is skipped to next iteration 
+    else
+    console.log(x);
+}
+console.log("");
+////////////////----break iteration------///////////////////
+//////////////////////////////////////////////////////////
+//when the condition is matched, the whole loop is terminated
+
+let a;
+for(a=1;a<=20;a++)
+{
+    if(a==13)
+        break;//when x=13, the loop is terminated; 
+    else
+    console.log(a);
+}
