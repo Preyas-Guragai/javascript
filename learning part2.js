@@ -1,7 +1,8 @@
 //-----------while loop-----------------
 //repeats some code WHILE some condition is true
- let username="";
- /*
+/* 
+let username="";
+ 
  while(username==="")
  {
     username=window.prompt("Enter your Name: ");
@@ -11,7 +12,7 @@
  // it will forever keep asking input and the box keep appearing. if you enter anyting
  //the condition inside while does not match. and while is terminated
 //if you cancel the box the output is "NULL"
-*/
+
 while(username==="" || username === null)
 {
     username=window.prompt("Enter your Name:");
@@ -30,4 +31,28 @@ do{
 while(username==="" || username === null)
     console.log(`Your name is ${username}`);
 
+*/
+
+//--while example-------------
+
+let loggedin=false; //i.e you are logged in
+let username;
+let password;
+while(!loggedin) //while not logged in
+//if you keep let----- loggedin=true;------ and run the code. nothing will appear since you are logged in
+//  and condition inside while is for not logged in
+    {
+       username=window.prompt(`Enter your username`);
+       password=window.prompt(`Enter your password`);
+
+if(username==="username" && password==="password")
+
+ {
+    loggedin=true;
+    console.log("you are logged in");
+ }
+ else
+ console.log("invalid");
+
+}
 
