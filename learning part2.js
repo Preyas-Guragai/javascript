@@ -103,7 +103,7 @@ for(a=1;a<=20;a++)
     console.log(a);
 }
     */
-
+/*
     ///////////////////////-------FUNCTION---------///////////////////////////
     /////////////////////////////////////////////////////////////////////////
 
@@ -189,3 +189,89 @@ else{
 }
 console.log(isValidEmail("vengeance@0.com"));
 console.log(isValidEmail("vengeance0.com"));
+
+*/
+
+///////////////////-----VARIABLE SCOPE-----//////////////////
+////////////////////////////////////////////////////////////
+
+//variable scope = where a variable is recognized and accessible
+                //global or local
+
+//example of local variable
+
+function function1()
+{
+    let x=3;
+    console.log(x); 
+}
+
+function function2()
+{
+    let x=44;
+    console.log(x);
+}
+
+function1();
+function2();
+
+//in above example x is used in both function1 and function2. if you have done let x=3 
+//and let x =4; outside of the function, you would encounter error
+
+////////////////////////--loacal variable example 2------/////////////
+
+function function11()
+{
+    let x=32;
+    console.log(x); 
+}
+
+function function22()
+{
+    let y=31;
+    console.log(y);
+}
+function11();
+function22();
+//in the above example x is local to function11 and y is local to function22. 
+//here, in this case, x cannot be accessed inside function22 and  y cannot be accessed inside of function11.
+
+////////////////////---global variable-------////
+
+let x=2062;
+function111();
+function1111();
+
+function function111()
+{
+    console.log(x);
+}
+function function1111()
+{
+    console.log(x);
+}
+
+//here x is declared and assigned 2062 in the global. so, function111 and  function1111 are able to access the x.
+
+////////////////-----global variable is overriden with local if same identifier is used----/////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let num=3;
+
+function num1()
+{
+    let num=300; //num=3; global overiden by local num=300;
+    console.log(num);
+}
+
+function num2()
+{
+    let num=30;  //num=3; global overiden by local num=30;
+    console.log(num);
+}
+
+num1();
+num2();
+
+//output=300 and 30;
+
