@@ -103,4 +103,89 @@ for(a=1;a<=20;a++)
     console.log(a);
 }
     */
+
+    ///////////////////////-------FUNCTION---------///////////////////////////
+    /////////////////////////////////////////////////////////////////////////
+
+    //if same code has to be repeated or used multiple times, we can use concept of function;
+
+    function happyBirthday()
+    {
+        console.log("Happy Birthday To you !!");
+        console.log("Happy Birthday To you !!");
+        console.log("Happy Birthday To you !!");
+    }
+    happyBirthday();
+
+    /////////////////-----FUNCTION WITH PARAMETERS---///////////////////
+    
+    function happiBirthday(username,age)
+    {
+        console.log("Happy Birthday To you !!");
+        console.log(`Happy Birthday To you ${username} !!`);
+        console.log(`you are ${age} years old !!`);
+    }
+    happiBirthday("vengeance", 19);
+
+
+    //example of function
+
+    function add(x,y)
+    {
+        let result=x+y;
+        return result;
+    }
+   let result= add(2,3); 
+   console.log(result);
+   console.log(add(2,3)); //do same as two lines above.
+
+//////////example/////////
+
+function add(x,y)
+{
+    return x+y;
+}
+
+function sub(x,y)
+{
+    return x-y;
+}
+
+function multiply(x,y)
+{
+    return x*y;
+}
    
+console.log(add(2,3));
+console.log(sub(2,3));
+
+let res=multiply(2,3);
+console.log(res);
+
+//////////example//////////
+
+function iseven(number)
+{
+    return number %2==0?true:false;
+}
+
+console.log(iseven(3));
+
+//////////////example/////////
+
+function isValidEmail(email)
+{
+    //using ternary operator 
+    //return email.includes("@")?true:false;
+if(email.includes("@"))
+{
+    return true;
+    //console.log("This is a valid email");
+}
+else{
+    return false;
+    //console.log("Email invalid");
+}
+}
+console.log(isValidEmail("vengeance@0.com"));
+console.log(isValidEmail("vengeance0.com"));
