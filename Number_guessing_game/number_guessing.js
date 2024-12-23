@@ -42,6 +42,9 @@ while(running)
         else{
             window.alert(`CONGRATULATIONS.The number is ${answer}. It took you ${attempts} attempts`);
             running=false;
+            //after user finds the correct number.
+            // so, we have to terminate or stop playing for that the condition is made false.
+
         }
     }
 }
