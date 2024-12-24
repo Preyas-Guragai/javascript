@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="temperature_conversion.css">
+    <script src="temperature_conversion.js" defer></script>
+</head>
+<body>
+    <form>
+    <h1>Temperature Conversion</h1>
+    <input type="number" id="textBox" value="0"><br>
+
+    <input type="radio" id="toFahrenheit" name="unit">
+    <label for="toFahrenheit">Celsuis ➡️ Fahrenheit</label> <!--windows+; opens emoji -->
+    <br>
+
+    <input type="radio" id="toCelsius" name="unit"> 
+    <label for="toCelsius">Fahrenheit ➡️ Celsuis  </label> <br>
+
+    <button type="button" onclick="convert()">submit</button>
+    <!--onclick is an attribute where you can place your javascript code-->
+    
+    <p id="result"></p>
+</form>
+</body>
+</html>

@@ -1,3 +1,5 @@
+//this is linked to  html file  learning part2.html
+
 //-----------while loop-----------------
 //repeats some code WHILE some condition is true
 //while loop can be used to run the code for the infinite time
@@ -192,6 +194,7 @@ console.log(isValidEmail("vengeance0.com"));
 
 */
 
+/*
 ///////////////////-----VARIABLE SCOPE-----//////////////////
 ////////////////////////////////////////////////////////////
 
@@ -274,4 +277,4 @@ num1();
 num2();
 
 //output=300 and 30;
-
+*/

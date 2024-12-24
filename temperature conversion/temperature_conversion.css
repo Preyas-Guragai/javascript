@@ -1,0 +1,60 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(194, 30%, 92%);
+}
+h1{
+    color: rgba(17, 57, 204, 0.652);
+}
+form
+{
+    background-color:  hsl(0, 0%, 95%);
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;           /*padding is the space between an element's content and its border */
+    border-radius: 10px;    /*to define the rounded corners of an element's outer border edge*/
+
+    box-shadow: 5px 5px 15px hsl(180, 3%, 16%);
+
+    /*Hue, Saturation, Lightness, and Alpha. It is used to specify colors with added transparency
+     (alpha channel) and allows you to create colors with more control and precision.*/
+
+}
+#textBox
+{
+width: 50%;
+text-align: center;
+font-size: 2em;
+border: 2px solid hsl(185, 60%, 33%);
+border-radius: 4px;
+margin-bottom: 15px;
+
+}
+label
+{
+font-size: 1.5em;
+font-weight: bold;
+
+}
+button{
+        margin-top: 15px;
+        background-color: hsl(305, 15%, 70%);
+        font-size: 1.5em;
+        border: none;
+        padding: 10px 15px ;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+}
+button:hover
+{
+    background-color: hsl(305, 15%, 60%);
+}
+
+#result
+{
+    font-size: 1.75em;
+    font-weight: bold;
+    color: hsl(65, 81%, 33%);
+}
