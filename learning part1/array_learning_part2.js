@@ -90,11 +90,30 @@ console.log(fruit[1]); // banana
 console.log(fruit[2]); // undefined
 console.log(fruit[3]); //undefined
 
-*/
 
+
+///////////////----.INDEXOF() IN ARRAY-----///////////////////////
+/////////////////////////////////////////////////////////////////
 let fruits=["mango","apple","banana","orange","kiwi"];
 let index=fruits.indexOf("mango");
 console.log(index); //0
 
 let index=fruits.indexOf("banana");
 console.log(index);//2
+*/
+
+///////////////-------loops in arrays---------/////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+let fruits=["mango","banana", "orange","kiwi","watermelon","papaya"];
+
+for(i=0; i<fruits.length; i++) //.length finds the total size of array
+{
+    console.log(fruits[i]);
+}
+//shortcut without using for loop
+
+for(let fruit of fruits) //displays all the values of arrays named fruits
+{
+    console.log(fruit);
+}
