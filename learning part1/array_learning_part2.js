@@ -100,7 +100,7 @@ console.log(index); //0
 
 let index=fruits.indexOf("banana");
 console.log(index);//2
-*/
+
 
 ///////////////-------loops in arrays---------/////////////////////////
 //////////////////////////////////////////////////////////////////////
@@ -114,6 +114,48 @@ for(i=0; i<fruits.length; i++) //.length finds the total size of array
 //shortcut without using for loop
 
 for(let fruit of fruits) //displays all the values of arrays named fruits
+
 {
     console.log(fruit);
+}
+
+*/
+
+///////////////-------reversing array---------/////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+//array_name.sort().reverse();------>syntax
+
+let Usernames=["Preyas","Samar","Arik","Ayush","Prince"];
+Usernames.sort(); //sorts array in alphabetical order
+Usernames.sort().reverse();//sorts array alphabetically and but in reverse---z,x,w-----c,b,a; 
+
+
+for(let i=0; i<Usernames.length; i++)
+    {
+        console.log(Usernames[i]);
+    }
+
+    ///////-----------OR--------------//
+    /*
+for(let Username of Usernames)
+    {
+        console.log(Username);
+    }
+*/
+
+let nums=["1","2","3","4"];
+nums.sort(); //sorts ascending to descending
+
+for(let num of nums)
+{
+    console.log(num);
+}
+
+
+nums.sort().reverse(); //sorts descending ascending to
+
+for(let num of nums)
+{
+    console.log(num);
 }
