@@ -1,6 +1,7 @@
 //this is linked to  html file learning.html
 
-///////////////////-----------ARRAY--------------/////////////
+///////////////////-----------ARRAY--------------///////////////
+///////////////////////////////////////////////////////////////
 
 //ARRAY=variable like structure that can hold more than one value
 
@@ -47,6 +48,7 @@ console.log(fruit[3]);
 
 
 //////////////////----------- array_name .POP -------///////////////////////
+///////////////////////////////////////////////////////////////////////////
 
 //removes the last index value and decreases the size of the array
 let fruit=["apple", "orange", "Banana"]
@@ -61,7 +63,7 @@ console.log(fruit[2]); //undefined
 
 
 //////////////////----------- array_name .unshift -------///////////////////////
-
+///////////////////////////////////////////////////////////////////////////////
 
 let fruit= ["apple", "orange", "Banana"];
 fruit.unshift("coconut"); //the array is now similar to --let fruit= ["coconut","apple", "orange", "Banana"];
@@ -94,6 +96,8 @@ console.log(fruit[3]); //undefined
 
 ///////////////----.INDEXOF() IN ARRAY-----///////////////////////
 /////////////////////////////////////////////////////////////////
+
+
 let fruits=["mango","apple","banana","orange","kiwi"];
 let index=fruits.indexOf("mango");
 console.log(index); //0
@@ -121,9 +125,12 @@ for(let fruit of fruits) //displays all the values of arrays named fruits
 
 */
 
+/*
+
 ///////////////-------reversing array---------/////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+//array_name.sort()
 //array_name.sort().reverse();------>syntax
 
 let Usernames=["Preyas","Samar","Arik","Ayush","Prince"];
@@ -144,6 +151,7 @@ for(let Username of Usernames)
     }
 */
 
+/*
 let nums=["1","2","3","4"];
 nums.sort(); //sorts ascending to descending
 
@@ -159,3 +167,63 @@ for(let num of nums)
 {
     console.log(num);
 }
+    */
+   
+
+
+/////////////////-----2D ARRAY---------2D ARRAY------------2D ARRAY------------2D ARRAY----------------////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//2D ARRAY= MULTI-DIMESNIONAL ARRAT THAT CAN STORE A MATRIX 
+//           OF DATA IN THE ROW AND COLUMN
+//         USEFUL FOR GAMES, SPREADSHEETS, OR REPRESENTING IMAGES;
+
+
+//       [x,o,x]
+//       [x,o,x]
+//       [x,o,x]
+
+const matrix=[[1, 2 ,3],[3, 4, 5], [6, 7, 8]];
+
+//               for(let row of matrix)
+//                  {
+//                     console.log(row);
+//                   }            
+                   
+/*
+for(let row of matrix)
+{
+    const rowString=row.join(); //puts all the rows systematically
+    console.log(rowString);
+}
+*/  
+
+/////////--------modifying the array------///////////
+//modifying the array and dispaying the rows systematically.
+matrix[0][0]="x";
+matrix[1][1]="x";
+matrix[2][2]="x";
+matrix[0][2]="x";
+matrix[2][0]="x";
+
+for(let row of matrix)
+    {
+        const rowString=row.join(" "); //puts all the rows systematically
+        console.log(rowString);
+    }
+
+
+    /////-----taking input from the user and storing array---------/////////
+    ///////////////////////////////////////////////////////////////////////
+
+// .push(); adds the array at the end;
+    let input=window.prompt("enter the size of array");
+    input=Number(input);
+    let item=[]
+    for(i=0; i<input; i++)
+    {
+        let ask=prompt("enter the array");
+        item.push(ask);
+    }
+    console.log(item);
