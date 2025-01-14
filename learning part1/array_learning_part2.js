@@ -291,7 +291,7 @@ let minm=Math.min(...number);
 console.log(maxm);
 console.log(minm);
 // after spread operator is used the each elements in the array is treated as seperate.     
-*/
+
 
 
 ///////////////-----SPREAD OPERATOR IN STIRNG-------------////////////
@@ -303,3 +303,17 @@ console.log(minm);
 let user_name=("VENGEANCE");
 let after_name=[... user_name].join("-");
 console.log(after_name);  // output ---> ['V', 'E', 'N', 'G', 'E', 'A', 'N', 'C', 'E']
+*/
+
+///////////////------array combine-----------//////////////////////////
+///////////////////////////////////////////////////////////////////////
+
+
+let fruit=["apple","orange","banana"];
+let vegetable=["carrot","onion","potato"];
+let fruits_vegetable=[...fruit, ...vegetable];
+console.log(fruits_vegetable); 
+//length of fruits_vegetable is 6. 
+
+let fruit_vegetable=[...fruit, ...vegetable, "eggs","milk"];
+console.log(fruit_vegetable);
