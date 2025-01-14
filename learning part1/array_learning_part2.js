@@ -254,5 +254,30 @@ for(let row of matrix) //each row is an array itself.
     }
 
 */
-   
 
+/////////////////////------POINT TO BE NOTED-------/////////////////////
+///////////////////////////////////////////////////////////////////////
+
+let fruits=["mango","apple","banana","orange","kiwi"]; //----->CORRECT
+ let fruits=[mango,apple,banana,orange,kiwi];//----->INCORRECT
+ let number = [1, 2, 3, 4, 5];  //----->CORRECT
+ 
+//                Here, number is an array of numerical values. Each value is written as a number
+//                (without quotes), which is the correct way to represent numbers in JavaScript.
+
+//        In this case, JavaScript will interpret mango, apple, banana, orange, and kiwi as variables, not strings. 
+//        If these variables are not previously defined, it will throw an error because 
+//        it won't know what these names refer to.
+
+
+
+   
+//////////////////////----------------spread operator------------////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+//             represented by three dot. (...)
+//             allows an iterable such as array or string to be expanded into seperate elements(unpacl the elements)
+
+
+let name=[p,r,e,y];
+console.log(name);
