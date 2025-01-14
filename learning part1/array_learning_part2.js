@@ -143,7 +143,8 @@ for(let i=0; i<Usernames.length; i++)
         console.log(Usernames[i]);
     }
 
-    ///////-----------OR--------------//
+    //////////////////////////-----------shortcut--------------///////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////
     /*
 for(let Username of Usernames)
     {
@@ -167,7 +168,46 @@ for(let num of nums)
 {
     console.log(num);
 }
-    */
+
+
+ ////////----------------taking input from the user and storing array---------////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                            // .push(); adds the array at the end;
+
+    let input=window.prompt("enter the size of array");
+    input=Number(input);
+    let item=[]
+    for(i=0; i<input; i++)
+    {
+        let ask=prompt("enter the array");
+        item.push(ask);
+    }
+    console.log(item);
+
+     
+/////////////////----------------shortcut-----------------////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+const fruits = ["apple", "banana", "cherry"];
+
+for (let fruit of fruits) {
+    console.log(fruit); // Prints each fruit in the array
+}
+
+
+In this example:
+
+fruits is an array containing three strings: "apple", "banana", and "cherry".
+
+for (let fruit of fruits) iterates over each element of the fruits array.
+
+During each iteration, fruit is assigned the value of the current element in the fruits array.
+
+console.log(fruit) prints the current fruit to the console.
+
+
+*/
    
 
 
@@ -175,7 +215,7 @@ for(let num of nums)
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-//2D ARRAY= MULTI-DIMESNIONAL ARRAT THAT CAN STORE A MATRIX 
+//2D ARRAY= MULTI-DIMESNIONAL ARRAY THAT CAN STORE A MATRIX 
 //           OF DATA IN THE ROW AND COLUMN
 //         USEFUL FOR GAMES, SPREADSHEETS, OR REPRESENTING IMAGES;
 
@@ -184,7 +224,7 @@ for(let num of nums)
 //       [x,o,x]
 //       [x,o,x]
 
-const matrix=[[1, 2 ,3],[3, 4, 5], [6, 7, 8]];
+// const matrix=[[1, 2 ,3],[3, 4, 5], [6, 7, 8]];
 
 //               for(let row of matrix)
 //                  {
@@ -197,7 +237,7 @@ for(let row of matrix)
     const rowString=row.join(); //puts all the rows systematically
     console.log(rowString);
 }
-*/  
+ 
 
 /////////--------modifying the array------///////////
 //modifying the array and dispaying the rows systematically.
@@ -207,23 +247,12 @@ matrix[2][2]="x";
 matrix[0][2]="x";
 matrix[2][0]="x";
 
-for(let row of matrix)
+for(let row of matrix) //each row is an array itself.
     {
         const rowString=row.join(" "); //puts all the rows systematically
         console.log(rowString);
     }
 
+*/
+   
 
-    /////-----taking input from the user and storing array---------/////////
-    ///////////////////////////////////////////////////////////////////////
-
-// .push(); adds the array at the end;
-    let input=window.prompt("enter the size of array");
-    input=Number(input);
-    let item=[]
-    for(i=0; i<input; i++)
-    {
-        let ask=prompt("enter the array");
-        item.push(ask);
-    }
-    console.log(item);

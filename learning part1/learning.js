@@ -527,7 +527,7 @@ r=c.includes("c");
     let phone="123-456-7890"
     phone=phone.padStart(15,"0"); //output=000123-456-7890
     //15 is the total field width but our input is 123-456-7890 i.e of 12 fieldwidth
-    //so 3 0 which is specified after field with is added in front and made total 15 fieldwidth
+    //so three zero which is specified after field with is added in front and made total 15 fieldwidth
     console.log(phone);
 
     /* this is illegal. since the total fieldwidth is 12 of pho and we are providing 6 FW.
