@@ -303,7 +303,7 @@ console.log(minm);
 let user_name=("VENGEANCE");
 let after_name=[... user_name].join("-");
 console.log(after_name);  // output ---> ['V', 'E', 'N', 'G', 'E', 'A', 'N', 'C', 'E']
-*/
+
 
 ///////////////------array combine-----------//////////////////////////
 ///////////////////////////////////////////////////////////////////////
@@ -317,3 +317,46 @@ console.log(fruits_vegetable);
 
 let fruit_vegetable=[...fruit, ...vegetable, "eggs","milk"];
 console.log(fruit_vegetable);
+
+//spread operator ends here...............
+*/
+
+
+
+/////////////////////---------------REST PARAMETERS------------------///////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//         REST PARAMETER= (...rest) allows a function work with a variable number 
+//                          of arguments by bundling them into an array
+
+//          spread= expands the array into seperate elements 
+//          rest=bundles seperate elements into array .
+
+function hold_foods(...foods) //...foods accepts the arguments 
+{
+    console.log(foods);
+}
+
+let food1="Burger";
+let food2="Pizza";
+let food3="Sekuwa";
+let food4="MoMo";
+let food5="keema";
+let food6="Samosa";
+
+hold_foods(food1, food2, food3, food4, food5, food6); //arguments passed
+
+
+///example:2
+
+function getAverage(...numbers)
+{
+    let result=0;
+    for(let number of numbers)
+    {
+        result+=number;
+    }
+    return result/numbers.length
+}
+let total=getAverage(1,2,3,4,5);
+console.log(total);
