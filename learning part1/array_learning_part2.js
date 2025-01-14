@@ -253,7 +253,7 @@ for(let row of matrix) //each row is an array itself.
         console.log(rowString);
     }
 
-*/
+
 
 /////////////////////------POINT TO BE NOTED-------/////////////////////
 ///////////////////////////////////////////////////////////////////////
@@ -261,7 +261,7 @@ for(let row of matrix) //each row is an array itself.
 let fruits=["mango","apple","banana","orange","kiwi"]; //----->CORRECT
  let fruits=[mango,apple,banana,orange,kiwi];//----->INCORRECT
  let number = [1, 2, 3, 4, 5];  //----->CORRECT
- 
+
 //                Here, number is an array of numerical values. Each value is written as a number
 //                (without quotes), which is the correct way to represent numbers in JavaScript.
 
@@ -269,8 +269,7 @@ let fruits=["mango","apple","banana","orange","kiwi"]; //----->CORRECT
 //        If these variables are not previously defined, it will throw an error because 
 //        it won't know what these names refer to.
 
-
-
+*/
    
 //////////////////////----------------spread operator------------////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -279,5 +278,17 @@ let fruits=["mango","apple","banana","orange","kiwi"]; //----->CORRECT
 //             allows an iterable such as array or string to be expanded into seperate elements(unpacl the elements)
 
 
-let name=[p,r,e,y];
-console.log(name);
+let number=[1,2,3,4,5];
+//let maxm=Math.max(number);
+// output----> NaN;
+//  why nan?
+// ---> The Math.max() function doesn't work directly on arrays, so it returns NaN (Not a Number) when you pass 
+// the array as an argument. Instead, you  should use the spread operator to spread the elements of the 
+// array as individual arguments to the Math.max() function
+
+let maxm=Math.max(...number);
+let minm=Math.min(...number);
+console.log(maxm);
+console.log(minm);
+// after spread operator is used the each elements in the array is treated as seperate.     
+
