@@ -277,7 +277,7 @@ let fruits=["mango","apple","banana","orange","kiwi"]; //----->CORRECT
 //             represented by three dot. (...)
 //             allows an iterable such as array or string to be expanded into seperate elements(unpacl the elements)
 
-
+/*
 let number=[1,2,3,4,5];
 //let maxm=Math.max(number);
 // output----> NaN;
@@ -291,4 +291,14 @@ let minm=Math.min(...number);
 console.log(maxm);
 console.log(minm);
 // after spread operator is used the each elements in the array is treated as seperate.     
+*/
 
+
+///////////////-----SPREAD OPERATOR IN STIRNG-------------////////////
+/////////////////////////////////////////////////////////////////////
+
+//                EACH STRING CAN BE TREATED AS AN ALPHABET BY THE USE OF  SPREAD OPERATOR
+
+let user_name=("VENGEANCE");
+let after_name=[... user_name];
+console.log(after_name);  // output ---> ['V', 'E', 'N', 'G', 'E', 'A', 'N', 'C', 'E']
