@@ -297,8 +297,9 @@ console.log(minm);
 ///////////////-----SPREAD OPERATOR IN STIRNG-------------////////////
 /////////////////////////////////////////////////////////////////////
 
-//                EACH STRING CAN BE TREATED AS AN ALPHABET BY THE USE OF  SPREAD OPERATOR
+//                EACH STRING CAN BE TREATED AS AN ALPHABET BY THE USE OF  SPREAD OPERATOR.
+//   i.e string is changed to array. 
 
 let user_name=("VENGEANCE");
-let after_name=[... user_name];
+let after_name=[... user_name].join("-");
 console.log(after_name);  // output ---> ['V', 'E', 'N', 'G', 'E', 'A', 'N', 'C', 'E']
