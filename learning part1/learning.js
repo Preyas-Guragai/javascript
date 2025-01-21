@@ -734,7 +734,7 @@ else
 console.log("this is pi");
 */
 
-// ------------CONTINUE LEARNING PART2 SERIES-------------------
+// ------------CONTINUE LEARNING PART2 and more SERIES-------------------
 //LEARNING PART2.HTML
 //LEARNING PART2.CSS
 //LEARNING PART2.JS

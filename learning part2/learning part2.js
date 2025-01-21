@@ -278,3 +278,7 @@ num2();
 
 //output=300 and 30;
 */
+
+//part2 ends here.
+
+/////----CONTINUE LEARNING PART 3 AND MORE ---------------

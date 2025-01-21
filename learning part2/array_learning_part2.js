@@ -1,4 +1,4 @@
-//this is linked to  html file learning.html
+//this is linked to  html file learningpart2.html
 
 ///////////////////-----------ARRAY--------------///////////////
 ///////////////////////////////////////////////////////////////
