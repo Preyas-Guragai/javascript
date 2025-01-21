@@ -331,7 +331,7 @@ console.log(fruit_vegetable);
 
 //          spread= expands the array into seperate elements 
 //          rest=bundles seperate elements into array .
-
+/*
 function hold_foods(...foods) //...foods accepts the arguments 
 {
     console.log(foods);
@@ -361,3 +361,4 @@ function getAverage(...numbers)
 let total=getAverage(1,2,3,4,5);
 console.log(total);
 
+*/
