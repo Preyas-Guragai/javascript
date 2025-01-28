@@ -88,7 +88,7 @@ function age()
 }
 */
 
-
+/*
 /////////////---------example---------------//
 
 sum(displayresultatconsole, 1, 5);
@@ -115,3 +115,4 @@ function displayresultatconsole(result)
 //  is called, which prints result is 6. Finally, the message "after printing result control flow back to
 //  calling function" is printed by the sum function. Thus, the code demonstrates how to use a callback
 //  function to handle the result of an operation within another function.
+*/
