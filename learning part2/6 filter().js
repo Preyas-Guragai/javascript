@@ -5,18 +5,20 @@
 
 ///////////////---------example 1---------------//////////////////////////
 /////////////////////////////////////////////////////////////////////////
+
+/*
 let numbers=[1,2,3,4,5,6,7];
 let even_number=numbers.filter(even);
 console.log(even_number);
 
 function even(element)
 {
-        /*if(element%2==0)
-        {
-           let n=element;
-            console.log(n);
-        }
-    */   
+            //         if(element%2==0)
+           //       {
+          //        let n=element;
+         //        console.log(n);
+        //        }
+      
    //this above filters even but not in the form of array;
         //instead do
 
@@ -27,6 +29,7 @@ function even(element)
 ///////////////////---------example-2-----------------/////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////
 
+/*
 let odd_number=numbers.filter(odd);
 console.log(odd_number);
 
@@ -73,3 +76,4 @@ function long_word(elementt)
 }
 
 //this code seperates word less and more than 6 alphabet character and makes seperate array;
+*/
