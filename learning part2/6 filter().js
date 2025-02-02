@@ -77,3 +77,7 @@ function long_word(elementt)
 
 //this code seperates word less and more than 6 alphabet character and makes seperate array;
 */
+//You provide a callback function that defines the condition 
+// for filtering. This function is called once for each element
+//  in the array, and it should return true if the element should
+//  be included in the new array, or false if it should not.
