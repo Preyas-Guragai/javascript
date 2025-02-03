@@ -18,6 +18,7 @@ console.log("hello");
 
 // FUNCTION EXPRESSION=A WAY TO DEFINE FUNCTION AS VALUES OR VARIABLES
 
+/*
 const hello=function (){
 
     console.log("hello");
@@ -80,4 +81,4 @@ console.log(total_mark);
 
 //demerits
 // this function can not be reused. it is used once.
-  
+  */
