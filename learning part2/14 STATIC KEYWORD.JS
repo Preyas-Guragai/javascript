@@ -4,6 +4,8 @@
 //            RATHER THAN THE OBJECTS CREATED FROM THAT CLASS (CLASS OWNS THE STATICS NOT THE OBJECTS)
 
 
+
+/*
 class maths{
     static PI=3.1415;
 }
@@ -29,6 +31,7 @@ Static properties belong to the class itself, not to any
 
   // use of static method;
 
+  /*
   class mathematics{
     static pi=3.1415;
 
@@ -114,7 +117,7 @@ console.log(maathematics.circumference(10));
 
 
 */
-
+/*
 /////////////////////////----------------example 5---------------------////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
   class User {
@@ -133,3 +136,4 @@ for (let i = 0; i < 5; i++) {
 }
 
 console.log(User.userCount);
+*/
