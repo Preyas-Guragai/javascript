@@ -39,8 +39,9 @@ number.forEach(double); //calls the double function and updates the current arra
 number.forEach(dispplay);
 
 function double(element, index, array) //the number array is passed in order element, index and array.
+                                        ////array here is just the original array. in this case number. 
 {
-    array[index]= element *2;
+    array[index]= element *2; // number[index]=element*2;
 }
 
 function dispplay(x)
@@ -57,7 +58,7 @@ let numberr=[1,2,3,4,5];
 numberr.forEach(square); //calls the double function and updates the current array.
 numberr.forEach(dissplay);
 
-function square(element, index, array)
+function square(element, index, array) 
 {
     array[index]=Math.pow(element,2);
 }
